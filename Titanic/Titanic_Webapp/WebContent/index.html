@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Titanic Predictor</title>
+<link href="resources/custom.css" rel="stylesheet">
+<link href="js/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand text-shadow">Can You Survived?</h3>
+              
+            </div>
+          </div>
+
+          <div class="inner cover">
+            <h1 class="cover-heading text-shadow text-center">Fill in your Info!</h1>
+            <form  role="form">
+              <label for="sex">Sex</label>
+              <select id="sex" class="form-control" data-column="sex">
+                <option value="1" selected>Male</option>
+                <option value="0">Female</option>
+              </select>
+
+              <label for="age">Age</label>
+              <input type="text" class="form-control field-sm" id="age" placeholder="Age" value="35" data-column="age">
+
+              <label for="fare">Fare</label>
+              <input type="text" class="form-control field-sm" id="fare" placeholder="Fare Amount" value="50" data-column="fare">
+
+              <label for="embarked">Embark Port</label>
+              <select id="embarked" class="form-control" data-column="embarked">
+                <option value="C">C</option>
+                <option value="S">S</option>
+                <option value="Q">Q</option>
+              </select>
+
+              <label for="cabin">Cabin</label>
+              <input type="text" class="form-control field-sm" id="cabin" placeholder="Cabin id" value="C200" data-column="cabin">
+            
+              <label for="pclass">Ticket Class</label>
+              <select id="plcass" class="form-control" data-column="plcass">
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+
+               <p>How Many Family Members onboard with you?</p>
+              <input type="text" class="form-control field-sm" id="family" placeholder="Number of Family Members" value="2" data-column="family">
+            </form>
+            <p class="text-center" style="font-size:36px"> <strong id="responseField"></strong></p>   
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/underscore-min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
